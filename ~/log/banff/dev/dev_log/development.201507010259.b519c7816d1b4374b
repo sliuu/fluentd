@@ -1,2 +1,0 @@
-20150701T025904+0000	banff.development	{"messages":"Requested by anonymous user\n{\"method\":\"GET\",\"path\":\"/home\",\"format\":\"html\",\"controller\":\"welcome\",\"action\":\"home\",\"status\":200,\"duration\":503.48,\"view\":485.29}","level":"INFO"}
-20150701T025909+0000	banff.development	{"messages":"{\"method\":\"POST\",\"path\":\"/users/sign_in\",\"format\":\"js\",\"controller\":\"sessions\",\"action\":\"create\",\"status\":0,\"duration\":208.92,\"view\":0.0}\n\n***\nFailed login with email: link@cipherhealth.com\n***\n","level":"INFO"}
