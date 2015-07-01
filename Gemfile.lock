@@ -1,7 +1,33 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    activemodel (4.2.3)
+      activesupport (= 4.2.3)
+      builder (~> 3.1)
+    activesupport (4.2.3)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    bson (3.1.1)
+    builder (3.2.2)
+    connection_pool (2.2.0)
     cool.io (1.2.4)
+    elasticsearch (1.0.12)
+      elasticsearch-api (= 1.0.12)
+      elasticsearch-transport (= 1.0.12)
+    elasticsearch-api (1.0.12)
+      multi_json
+    elasticsearch-transport (1.0.12)
+      faraday
+      multi_json
+    excon (0.45.3)
+    faraday (0.9.1)
+      multipart-post (>= 1.2, < 3)
+    fluent-plugin-mongo (0.7.8)
+      fluentd (>= 0.10.9, < 2)
+      mongo (>= 1.9.0)
     fluent-plugin-td (0.10.18)
       fluentd (~> 0.10.27)
       td-client (~> 0.8.58)
@@ -16,8 +42,25 @@ GEM
       yajl-ruby (~> 1.0)
     http_parser.rb (0.6.0)
     httpclient (2.4.0)
+    i18n (0.7.0)
     json (1.8.1)
+    minitest (5.7.0)
+    mongo (2.0.6)
+      bson (~> 3.0)
+    mongoid (4.0.2)
+      activemodel (~> 4.0)
+      moped (~> 2.0.0)
+      origin (~> 2.1)
+      tzinfo (>= 0.3.37)
+    moped (2.0.6)
+      bson (~> 3.0)
+      connection_pool (~> 2.0)
+      optionable (~> 0.2.0)
     msgpack (0.5.9)
+    multi_json (1.11.1)
+    multipart-post (2.0.0)
+    optionable (0.2.0)
+    origin (2.1.1)
     sigdump (0.2.2)
     td-client (0.8.67)
       httpclient (~> 2.4.0)
@@ -34,5 +77,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  elasticsearch
+  excon
+  fluent-plugin-mongo
   fluent-plugin-td (= 0.10.18)
   fluentd (~> 0.10.48)
+  mongoid
+
+BUNDLED WITH
+   1.10.5
