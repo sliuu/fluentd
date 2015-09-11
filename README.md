@@ -1,7 +1,6 @@
-Centralized App Logging with Fluentd
-------------------------------------
+# Centralized App Logging with Fluentd
 
-## Testing on Local
+### Testing on Local
 
 Install a local td-agent/fluentd server [with these docs](http://docs.fluentd.org/v0.12/categories/installation).
 
