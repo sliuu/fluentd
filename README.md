@@ -1,5 +1,7 @@
 # Centralized App Logging with Fluentd
 
+[Fluentd](http://www.fluentd.org/) is an awesome open-source centrealized app logging service written in ruby and powered by open-source contributors via plugins. 
+
 ### Testing on Local
 
 Install a local td-agent/fluentd server [with these docs](http://docs.fluentd.org/v0.12/categories/installation).
