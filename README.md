@@ -27,7 +27,7 @@ $ td-agent gem install fluent-plugin-###
 
 If you're using the fluent gem, run
 ```bash
-$ fluent-gem install fluent-plugi-###
+$ fluent-gem install fluent-plugin-###
 ```
 
 To update a ruby on rails or sinatra app to send logs to a fluentd server, you can check out my [blogpost](http://stephanieliu.net/coding/2015/07/18/struggling-with-fluentd-part-1.html) :)
